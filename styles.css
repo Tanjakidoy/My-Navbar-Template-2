@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,15 +11,34 @@ body {
   background-color: white;
 }
 
+/* CSS - STYLING THE HTML NAV ELEMENT */
 nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* CSS - STYLING THE HTML "LOGO" CLASS*/
+.logo {
+  color: white
+  }
+  
+  span {
+    color: #ea1538;
+  }
+
+/* CSS - STYLING THE UL/LI ELEMENT */
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover{
+  color: #ea1538;
+  transition: .3s;
 }
 
 nav a {
@@ -25,11 +46,19 @@ nav a {
   min-width: 9rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  border: solid 1px #aaa;
   text-align: center;
   text-decoration: none;
   color: #555;
 }
+
+/* CSS - STYLING THE UL/LI ELEMENT */
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 
 nav a[aria-current='page'] {
   color: #000;
@@ -44,3 +73,41 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/* CSS - STYLING THE HTML BUTTON ELEMENT */
+
+button {
+  border: none;
+  background: #ea1538;
+  padding: 12px 30px;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+}
+
+/* CSS - STYLING THE HTML BUTTON ELEMENT */
+
+button:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+} 
+
+/* CSS - STYLING THE HTML FOOTER CLASS */
+
+.footer_content {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  }
+
+  .navbar {
+    height: 64px;
+    width: 100%;
+    background-color: DarkSalmon;
+  }
